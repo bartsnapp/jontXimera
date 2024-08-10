@@ -28,10 +28,10 @@ but the emphasis in the early analysis was on integer constructions, such as Euc
 \index{Fibonacci recursion formula}
 As we shall see, the derivation of the formula for Pythagorean triplets is the first of a rich body of
 mathematical constructions---such as solutions of Pell's equation (p.~\pageref{Lec 8}),%
- \footnote {Heisenberg, an inventor of the matrix algebra form of quantum mechanics, learned mathematics
-by studying Pell's equation (p.~\pageref{Lec 8}) by eigenvector and recursive analysis methods. {\scriptsize \url{https://www.aip.org/history-programs/niels-bohr-library/oral-histories/4661-1}} \label{PellsEquation}
-\index{Pell's equation, Heisenberg's view}
-	}
+% BART \footnote {Heisenberg, an inventor of the matrix algebra form of quantum mechanics, learned mathematics
+% by studying Pell's equation (p.~\pageref{Lec 8}) by eigenvector and recursive analysis methods. {\scriptsize \url{https://www.aip.org/history-programs/niels-bohr-library/oral-histories/4661-1}} \label{PellsEquation}
+% \index{Pell's equation, Heisenberg's view}
+% 	}
 and recursive difference equations, such as solutions of the Fibonacci recursion formula
 $f_{n+1} = f_n + f_{n-1}$ (see p.~\pageref{Lec 9})---that goes back at least to the Chinese (2000 BCE).
 These are early pre-limit forms of calculus, best analyzed using an eigenfunction
@@ -53,13 +53,13 @@ who then deployed the concept using beads, did not understand negative numbers, 
  \index{abacus}
 However, understanding the concept of zero (and negative numbers) is not the same as having a symbolic
 notation.  The Roman number system has no such symbols. 
-The first recorded use of a symbol for zero is said to be by Brahmagupta in 628 CE.\footnote{\scriptsize\url{https://news.nationalgeographic.com/2017/09/origin-zero-bakhshali-manuscript-video-spd/}; \scriptsize\url{https://www.nytimes.com/2017/10/07/opinion/sunday/who-invented-zero.html}}
+The first recorded use of a symbol for zero is said to be by Brahmagupta in 628 CE.%BART\footnote{\scriptsize\url{https://news.nationalgeographic.com/2017/09/origin-zero-bakhshali-manuscript-video-spd/}; \scriptsize\url{https://www.nytimes.com/2017/10/07/opinion/sunday/who-invented-zero.html}}
 
 % \footnote{The fall of the Roman Empire has been defined as Sept.~4, 476 {CE}.}
  \index{Brahmagupta}
 However, this is likely wrong, given the notation developed by the Mayan civilization,
 which existed from
-2000 BCE to 900 CE.\footnote{\scriptsize\url{https://www.storyofmathematics.com/mayan.html}}
+2000 BCE to 900 CE.%BART\footnote{\scriptsize\url{https://www.storyofmathematics.com/mayan.html}}
 There is speculation that the Mayans cut down so much of the Amazon jungle that it eventually resulted
 in global warming, possibly leading to their demise.
   % interesting word of mouth via Phil Krein, ECE UIUC, Nov 2018
@@ -594,7 +594,7 @@ The error (difference) is a matter of precision.
 When doing numerical work, one must consider how to compute within the set of reals $\R$ (i.e., which contain irrationals $\I$). 
 There can be no irrational number representation on a computer.
 The international standard of computation, IEEE-754 floating-point numbers,%
- \footnote{IEEE-754: \url{https://www.h-schmidt.net/FloatConverter/IEEE754.html}}
+ %BART\footnote{IEEE-754: \url{https://www.h-schmidt.net/FloatConverter/IEEE754.html}}
 is based on rational approximation. 
 
 \index{fundamental theorem: arithmetic}
@@ -621,7 +621,7 @@ Such a representation would improve the resolution of the representation. But ev
 numbers would be approximate.
  %\Marginpar{Make a table?} BART
 For example, base ten is natural using this representation, since $10^n = 2^n 5^n$.%
- \footnote{Base 10 is the accepted standard, simply because we have 10 fingers on two hands, each having 5 fingers.}  
+ %BART\footnote{Base 10 is the accepted standard, simply because we have 10 fingers on two hands, each having 5 fingers.}  
 Thus
 \[
 \pi \cdot 10^5 \approx 314, 159.27\ldots\, = 3\cdot 2^5 5^5 + 1\cdot 2^4 5^4 + 4\cdot2^3 5^3 + \cdots +
@@ -755,7 +755,7 @@ $\pi_n$ &\text{hex} & 2& 3& 5& 7&0B &0D &11 &13 &17 &1D &1F &$\cdots$\\
 
 \BEx
 $x=2^{17}\times 22/7$, using IEEE-754 double precision:%
- \footnote{{\url{https://www.h-schmidt.net/FloatConverter/IEEE754.html}}}
+ %BART\footnote{{\url{https://www.h-schmidt.net/FloatConverter/IEEE754.html}}}
  \begin{align*}
  	&=411,940.5625_{10}  \\
 	&= 2^{54} \times 1,198,372 \\
@@ -856,7 +856,7 @@ An important application of prime numbers is public-key  encryption, which is es
  %   i) a key application of primes, or
  %  ii) it is primary application of keys. (Its a joke.)}
 Decryption depends on factoring large integers formed from products of primes having thousands of bits.%
- \footnote{\magenta As a simple but concrete example, a public-key encryption that would be much more secure.
+ %BART\footnote{\magenta As a simple but concrete example, a public-key encryption that would be much more secure.
 The product of many primes could be the public-key while one large prime, or better, the product of a subset of primes,
  Start with two (or more) primes, such as 5*3 and 5*11, and then using the Euclidean (GCD) algorithm
   %\cite{\ref{Lec 5}}
@@ -883,7 +883,7 @@ Consider the problem of sorting all the molecules in 1 liter of a mixture of sev
 Public-key encryption is based on a trap-door function. % (p.~\citep{ref.142857}).
 If everyone were to switch from passwords to public-key encryption,
 the internet would be much more secure.%
- \footnote{\scriptsize \url{https://fas.org/irp/agency/dod/jason/cyber.pdf}} 
+ %BART\footnote{\scriptsize \url{https://fas.org/irp/agency/dod/jason/cyber.pdf}} 
 \index{internet security} \index{passwords} \index{public-key security}
 
 \BEx
@@ -977,10 +977,10 @@ terms of rationals ($\Q = \Z\cup \F$).
 % \footnote{See Appendix \ref{Apdx:Notation} (p.~\pageref{Apdx:Notation}) for a review of mathematical notation.}
 
 The primary reason integers are so important is their absolute precision.  Every integer $n\in \Z$ is unique%
- \footnote{Check out the history of $1729 = 1^3+ 12^3 = 9^3 + 10^3$.
+ %BART \footnote{Check out the history of $1729 = 1^3+ 12^3 = 9^3 + 10^3$.
  %GW Hardy and S Ramanujan and story about 1729 and how it fits Pygath Thm two ways
- Does this violate Euclid's formula? \red Namely, given $c$, when are $a$ and $b$ unique?
- 	}
+ %Does this violate Euclid's formula? \red Namely, given $c$, when are $a$ and $b$ unique?
+ 	%}
 and has the indexing property, which is essential for making lists that are ordered, so that
 one can quickly look things up.  The alphabet also has this property (e.g., a book's index).
  %Other than for hexadecimal numbers, which for notional reasons use the alphabet, other than the base,
@@ -1259,10 +1259,10 @@ It is an important observation that the reciprocals of prime numbers are rationa
  $P(1229)=9973$.
 To verify: $factor(9969)=[3,3323]$ or $factor(1745) = [5,349].$
  Using $P=primes(2e4)$ then $P(2262)=19997$, and $factor(19995)= [3, 5, 31, 43]$.
-\footnote{\olive We may fit a straight line on this figure to estimate the slop of the minimum
-points, thus giving a numberical slope to the curve.  I suspect the answer will reveal a simple
-formula for $R(k)$. 
- }
+%BART\footnote{\olive We may fit a straight line on this figure to estimate the slop of the minimum
+%points, thus giving a numberical slope to the curve.  I suspect the answer will reveal a simple
+%formula for $R(k)$. 
+% }
   %red, green, blue, cyan, magenta, yellow, black, gray, white, darkgray, lightgray, brown, lime, olive,
   % orange, pink, purple, teal, violet.
 
@@ -1329,7 +1329,7 @@ Second-order operators such as the
  from first-order operators. The most important of these is the vector Laplacian $\VectorLaplacian()$,
 the gradient of the divergence (\gOd) which is required when working with Maxwell's
 wave equations.%
- \footnote{See \S \ref{Lec 40} (p.~\pageref{Lec 40}) for the definitions of \DoG\ and \gOd.}
+ %BART\footnote{See \S \ref{Lec 40} (p.~\pageref{Lec 40}) for the definitions of \DoG\ and \gOd.}
 
 The first three operations are defined in terms of integral operations on a surface in one, two, or three dimensions
 by taking the limit as that surface, or the volume contained within, goes to zero.  These three differential operators are essential to fully understand Maxwell's equations, the crown jewel
@@ -1342,7 +1342,7 @@ of mathematical physics.  Hence mathematics plays a key role in physics, as does
  %Table \ref{box:FundamentalThms} item 2 identifies several Other key concepts. %incrementally Remove table
 In addition to the widely recognized fundamental theorems,
 there are a number of equally important theorems that have not yet been labeled ``fundamental.''%
- \footnote{It is not clear what it takes to reach this more official sounding category.}
+ %BART\footnote{It is not clear what it takes to reach this more official sounding category.}
  \index{fundamental theorem: calculus (Leibniz)}
  \index{fundamental theorem: complex calculus (Cauchy)}
  \index{fundamental theorem: vector calculus (Helmholtz)}
@@ -1555,8 +1555,8 @@ $2313 = 3^2 \cdot 257 = \pi_3^2 \; \pi_{55} $ (i.e., $\pi_2=3, \beta_3=2; \pi_{5
  %
 Our demonstration of this is empirical, using the Matlab/Octave \texttt{factor(N)} routine, which
 factors $N$.%
- \footnote{If you wish to be a mathematician, you need to learn how to prove theorems.  If you're a
- physicist, you are happy that someone else has already proved them, so that you can use the result.}
+ %BART\footnote{If you wish to be a mathematician, you need to learn how to prove theorems.  If you're a
+%BART physicist, you are happy that someone else has already proved them, so that you can use the result.}
 
 What seems amazing is the unique nature of this theorem.  Each counting number is uniquely
 represented as a product of primes. No two integers can share the same factorization.
@@ -1566,8 +1566,7 @@ is significantly more difficult than factoring two.
 
 Factoring is much more expensive than division. This is not due to the higher cost of division
 over multiplication, which is less than a factor of 2.%
- \footnote{\scriptsize
-\url{https://streamcomputing.eu/blog/2012-07-16/how-expensive-is-an-operation-on-a-cpu/}}
+ %BART\footnote{\scriptsize\url{https://streamcomputing.eu/blog/2012-07-16/how-expensive-is-an-operation-on-a-cpu/}}
 Dividing the product of two primes, given one, is trivial, slightly more expensive that multiplying.
 Factoring the product of two primes is nearly impossible, as one needs to know what to divide by.
  %This is an explosion in probability, measured by \emph{Shannon entropy}. See more detailed disc below
@@ -1983,7 +1982,7 @@ Since entries are negative, we may deduce that Matlab/Octave uses rounding arith
 (this does not seem to be documented).
  }
 Note that the leading integer part $m_0$ may be indicated by an optional semicolon.%
- \footnote{ Unfortunately Matlab/Octave does not support the bracket notation.}
+ %BART{ Unfortunately Matlab/Octave does not support the bracket notation.}
 If the steps are carried further, the values of $m_n \in \Z$ give increasingly more accurate
 rational approximations.  The five rounding schemes are discussed in Appendix \ref{func:rounding}.
 
@@ -2174,12 +2173,12 @@ It must be that
 1/3 = 3\times10^{-1} + 3\times10^{-2} + 3\times10^{-3} +\dots.
 \]
 Here $3\cdot3 = 9$.  As a second example,%
-  \footnote{Using a signal processing approach, we could take the Fourier transform of the target number,
-  represented as a sequence. This could help to identify an underlying periodic component. 
-  For example, the number $1/7 \leftrightarrow [[1,4,2,8,5,7]]_6$ has a 50 [dB] notch at 0.8$\pi$ [rad], due to its
-  six-digit periodicity, carried to 15 digits
- (Matlab/Octave maximum precision), Hamming-windowed, and zero padded to 1024 samples.
- 	}
+%BART   \footnote{Using a signal processing approach, we could take the Fourier transform of the target number,
+%   represented as a sequence. This could help to identify an underlying periodic component. 
+%   For example, the number $1/7 \leftrightarrow [[1,4,2,8,5,7]]_6$ has a 50 [dB] notch at 0.8$\pi$ [rad], due to its
+%   six-digit periodicity, carried to 15 digits
+%  (Matlab/Octave maximum precision), Hamming-windowed, and zero padded to 1024 samples.
+%  	}
 
 
 \[
@@ -2362,8 +2361,7 @@ p.~\pageref{fig:timelineBCE}).
 A clay tablet from the 19th century BCE with the numbers engraved on it, as shown in
  Fig.~\ref{fig:Plimpton322} % (p.~\pageref{fig:Plimpton-322}),
 was discovered in Mesopotamia, and cataloged in 1922 by George A.~Plimpton.%
- \footnote{\scriptsize 
- \url{https://www.nytimes.com/2010/11/27/arts/design/27tablets.html}}
+ %\footnote{\scriptsize \url{https://www.nytimes.com/2010/11/27/arts/design/27tablets.html}}
 % \footnote{\scriptsize \url{https://en.wikipedia.org/wiki/Plimpton_322} }
  %
 These numbers are $a$ and $c$ pairs from PTs $[a,b,c]$. Given this discovery, it is clear that the
@@ -2371,10 +2369,7 @@ Pythagoreans were following those who came long before them.
  %\marginpar{\red \hspace{18mm} More PT text}% here re Plimpton 322 and other relevant topics? BART
 Recently a second tablet, dating between 350 and 50 BCE, has been reported, that indicates
 calculations of the apparent motion of Jupiter based on a trapezoidal graph of the rate.%
- \footnote
-	{\scriptsize
-\url{https://www.nytimes.com/2016/01/29/science/babylonians-clay-tablets-geometry-astronomy-jupiter.html}
-	}
+ %\footnote {\scriptsize\url{https://www.nytimes.com/2016/01/29/science/babylonians-clay-tablets-geometry-astronomy-jupiter.html}}
 
 It is of interest that PTs play a role on atomic physics, as discussed in Appendix \ref{Appdx:RhydbergModel}, \pageref{Appdx:RhydbergModel}
 .%on page \pageref{Sect:EuclidsFormulaRydbergAtom}.
@@ -2959,7 +2954,8 @@ The complete eigenvalue problem may be written as
  \[
 AE=E\Lambda.
  \]
- If $A$ is a $2\times2$ matrix,\footnote{These concepts may be easily extended to higher dimensions.} the matrices $E$ and $\Lambda$ (of eigenvectors and eigenvalues, respectively) are%
+ If $A$ is a $2\times2$ matrix,%BART \footnote{These concepts may be easily extended to higher dimensions.}
+  the matrices $E$ and $\Lambda$ (of eigenvectors and eigenvalues, respectively) are%
 \[ E =  
 \bbm
 \vec{e}_1& \vec{e}_2
