@@ -241,13 +241,13 @@ A classic example is the approximation of irrational $\pi$ by the rational appro
 
 Perhaps a more direct and obvious example is produced by this 2-line octave code:
 \begin{center}
-	\begin{verbatim}
+\begin{verbatim}
 octave:> ($\pi*2^8)/2.0001^8 $
 ans = 3.140336299224576
 
 octave:> round(pi*2^15)/(2.0001^15)
 ans = 3.141601562500000
-	\end{verbatim}
+\end{verbatim}
 \end{center}
 This is the effect of rounding, following $2^8$ and $2^{15}$ numerical scaling, followed by rounding.
 Note how this repeats after 8 decimal places, showing that the conversion from $\pi\in\I$ (irrational)
@@ -1831,7 +1831,7 @@ the difference positive, which is addressed by the upper row of Eq.~\ref{eq:gcd}
 Here is a simple Matlab/Octave code to find \texttt{l=gcd(m,n)} based on the \citet{JS10}
 definition:
 %\begin{lstlisting} %Dont like the look
- \begin{verbatim}  %~/M/gcd0.m
+\begin{verbatim}  %~/M/gcd0.m
 function k = gcd(m,n)
  while m ~=0
   A=m; B=n;
@@ -1839,7 +1839,7 @@ function k = gcd(m,n)
   m=m-n;
  endwhile %m=n
   k=A;
- \end{verbatim}
+\end{verbatim}
 %\end{lstlisting}
 This program loops until $m=0$.
 
