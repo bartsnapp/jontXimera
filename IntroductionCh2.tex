@@ -801,7 +801,7 @@ ruler by maintaining right triangles.
 \centering
 %To convert svg to eps, see ./EPS/Spiral_of_Theodorus.jba
 \includegraphics[width=2in]{EPS/Spiral_of_Theodorus-v1.pdf}
-\Caption{\label{fig:TheodorusSpiral}
+%\Caption{\label{fig:TheodorusSpiral}
 % Ths ref is resolved on page 33 for Fig 2.1
 %\green
 The spiral of Theodorus, made from contiguous right triangles having
@@ -1100,7 +1100,7 @@ Taken as a whole, they are a powerful way of summarizing mathematics.
  % spit out the graphic
  \includegraphics[trim={0cm 0cm 0cm 0cm},clip,width=5in,height=4in,width=0.95\textwidth]{./M/PrimeRatio.eps}
 %
-\Caption{ \label{fig:PrimeRatio}
+%\Caption{ \label{fig:PrimeRatio}
 This figure succinctly summarizes all of the known theorems that are know about prime numbers, in one
 	simple graph, as a log-log plot of $|1-R_k|$.
 Here $R_k$ is defined as
@@ -1467,7 +1467,7 @@ $\pi_k=2,3,5,7,11,13,17,19,23,29,31,37,41,43,47$ (highlighted in red). Above 2, 
 numbers, and above $5$, all end with $1, 3, 7,$ or $9$.
 	\Ee %2
 \vspace{-4mm}
-\Caption{ \label{fig:sieve}
+%\Caption{ \label{fig:sieve}
 %\index{prime sieve}
 \index{Eratosthenes}
 Sieve of Eratosthenes for $N=50$.
@@ -1660,7 +1660,7 @@ Thus the GCD reduces to the definition of long division.
 %\begin{tcolorbox}
 \centering
 \resizebox{0.7\linewidth}{!} {\input{./Figs/EuclideanAlg} }
-  \Caption{ \label{fig:EuclideanAlg}
+  %\Caption{ \label{fig:EuclideanAlg}
 The Euclidean algorithm recursively subtracts $n$ from $m$ until the remainder $m-kn$ is less than either
 $n$ or zero. Note that this recursion is the same as \texttt{mod(m,n)}. Thus the GCD recursively
 computes \texttt{mod(m,n)} until the remainder \texttt{rem(m,n)} is less than $n$, which is called the
@@ -1949,7 +1949,7 @@ While we can never know the basis behind Gauss's insight, was its his definition
  \] %}
 \Ee %}
 
-\Caption{ \label{fig:CFA}
+%\Caption{ \label{fig:CFA}  BART
 Definition of the CFA of any positive number, $x_0\in \R^+,$.
 Numerical values for $n=0, x_0=\pi, m_0=0$ are on the right.
 For $n=1$ the input vector is $[m_1, x_2]^T = [3, 7.0626]^T$.
@@ -2038,7 +2038,7 @@ should be specified, not inferred.
   + o(3.3\times10^{-10}) \\
 \end{align*}
 	\vspace{-15mm}
- \Caption{\label{fig:RationalApprox}
+% \Caption{\label{fig:RationalApprox}
 The expansion of $\pi$ to various orders of approximation by use of the CFA, along with the error.
 For example, $\hat{\pi}_2=$22/7 has an absolute error ($|22/7-\pi|$) of about 0.13\%.
 It is a trivial observation that a change to any of the numbers in these approximations would change the valued.
@@ -2265,8 +2265,8 @@ c=p^2 + q^2.
  \centering
 \includegraphics[width=0.25\textwidth]
 {./EPS/PythBeadStringFig1.eps}
-\Caption{Beads on a string form perfect right triangles when the number of unit lengths between beads on 
-each side satisfies Eq.~\ref{eq:PyThm}.  For example, when $p=2, q=1$, the sides are $[3,4,5]$.
+%\Caption{Beads on a string form perfect right triangles when the number of unit lengths between beads on 
+%each side satisfies Eq.~\ref{eq:PyThm}.  For example, when $p=2, q=1$, the sides are $[3,4,5]$.
   \label{fig:bricks}
   	}
 \end{figure}
@@ -2290,7 +2290,7 @@ is obviously much more difficult, and is similar to the proof of Pell's equation
  
 
 \begin{table}[htb]
-\Caption{ \label{fig:PT-Examples}
+%\Caption{ \label{fig:PT-Examples}
 Table of Pythagorean triplets computed from Euclid's formula, Eq.~\ref{eq:EuclidsFormula}, for
 various $[p,q]$. The last three columns are the first, fourth, and penultimate values of Plimpton-322
 	(p.~\pageref{fig:Plimpton322})
@@ -2329,12 +2329,12 @@ length ($[1,\sqrt{3},2]$).
 	\centering
 \includegraphics[trim={0cm 7cm 0cm 1.99cm},clip ,width=5in]{./EPS/IntegerPairsp28.eps}
  %\includegraphics[clip,width=5in]{./EPS/IntegerPairsp28.eps}
-\Caption{
+%\Caption{
 Plimpton-322, a clay tablet from 1800 BCE that displays $a$ and $c$ values of the Pythagorean
 triplets $[a,b,c]$, with the property $b=\sqrt{c^2-a^2} \in \N$.  Several of the $c$ values are primes,
 but not the $a$ values.  The clay is item 322 (item 3 from 1922) from the collection of George A.~Plimpton.
- \label{fig:Plimpton322}
- \index{Plimpton-322}
+ %\label{fig:Plimpton322} BART
+ %\index{Plimpton-322}  BART
 	}
 %\end{minipage}
 \end{figure}
@@ -2792,7 +2792,7 @@ the sum of the previous two, and the next $y_{n}$ is $x_n$.
 \centering
 %not sure how I converted this from svg to eps; Likely using inkscape. See ./EPS/SqrtRiemann.jba
 \includegraphics[width=.3\textwidth]{EPS/FibonacciSpiral} \index{spiral of Fibonacci}
-\Caption{ \label{fig:FibonacciSpiral}
+%\Caption{ \label{fig:FibonacciSpiral}
 A construction called the Fibonacci spiral. Note how it is constructed of squares
 that have areas given by the squares of the Fibonacci numbers. In this way, the spiral is smooth and the
 radius increases as the Fibonacci numbers (e.g., $8 = 3 + 5$, $13 = 5 + 8$, etc.).
