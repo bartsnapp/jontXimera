@@ -776,6 +776,9 @@ As before, the commas are to help with readability and have no other meaning.
 % \end{example}
 \EEx
 
+
+
+
 % \marginpar{\hspace{0cm}\tiny\red More examples?}
 
 It may be easier to find the period of rational numbers expressed a binary bit stream since a search
@@ -818,10 +821,10 @@ But passwords are fundamentally insecure because it is relatively easy for a com
  (including those which use the Shift, CapsLock, Ctrl, Alt, Esc and Windows keys).
  For example the key ``c'' can be modified to be Shift-c, Ctrl-c, Alt-c, Esc-c, etc.
 
-\comment  {\red
-Unfortunately the word entropy has a serious flaw since it has two different meanings, first in Claude Shannon's \emph{theory of information}, and second in the \emph{thermodynamics of theory of heat}.
-While not iddeal, the different meanings can typically be decoded from the sentence context.
- }
+%BART \comment  {\red
+% Unfortunately the word entropy has a serious flaw since it has two different meanings, first in Claude Shannon's \emph{theory of information}, and second in the \emph{thermodynamics of theory of heat}.
+% While not ideal, the different meanings can typically be decoded from the sentence context.
+%  }
 
 In the field of computer security there is an important concept known as \emph{entropy}.
 Unfortunatly the word has two quite different meanings.
@@ -905,6 +908,8 @@ cast as a linear algebra problem with integer solutions. Again, once you know th
 \index{Chinese four stone problem: see puzzles} \index{puzzles}
 
 %\clearpage %Optional newpage
+
+
 
 %\comment
 	{% NS-1
@@ -995,6 +1000,7 @@ few years petabyte drives will certainly become available.  It is hard to compre
 be used by individuals, yet they are essential for online (cloud) computing.
 
 
+
 \subsection {The three streams of mathematics}
 Modern mathematics is built on a hierarchical construct of fundamental theorems, as summarized in the following boxed material  on page \pageref{box:FundamentalThms}.
 The importance of such theorems cannot be overemphasized.
@@ -1008,7 +1014,7 @@ Fortunately most students already know several of these theorems, but perhaps no
 %\begin{table}[ht]
 \begin{center}
 \footnotesize
-\begin{minipage}{.65\textwidth}
+%\begin{minipage}{.65\textwidth}  BART
 \begin{tcolorbox}
 {\bf \large The three streams of mathematics}
 %\Caption{
@@ -1046,11 +1052,7 @@ Fortunately most students already know several of these theorems, but perhaps no
 \Ee %}
 %\noindent\rule{\textwidth}{0.2pt}
 \end{tcolorbox}
-\end{minipage}
 \end{center}
-%\end{table}
-
-
 %Review of all the FT
 %  \Bi
 %\item Arithmetic
@@ -1060,6 +1062,7 @@ Fortunately most students already know several of these theorems, but perhaps no
 %\item Calculus (e.g., Leibniz $\R^1$, Complex $\C, \R^2$, Vector $\R^n$)
 %\item Green's (e.g., Gauss'. and Stokes's) theorems%
 %  \Ei
+
 
 The fundamental theorems are naturally organized and may be thought of in terms of the three streams of \citet{JS10}.
  %
@@ -1093,11 +1096,11 @@ Taken as a whole, they are a powerful way of summarizing mathematics.
 % \includegraphics[trim={10.35cm 2.5cm 8.4cm 22.cm},clip,width=5in,height=5in,width=0.95\textwidth] %Very GOOD
 % \includegraphics[trim={0.9cm 0.cm 3.9cm 14.5cm},clip,width=5in,height=3in,width=0.95\textwidth] %Orig
  % spit out the graphic
- \includegraphics[trim={0cm 0cm 0cm 0cm},clip,width=5in,height=4in,width=0.95\textwidth]{./M/PrimeRatio.eps}
+ \includegraphics[trim={0cm 0cm 0cm 0cm},clip,width=5in,height=4in,width=0.95\textwidth]{./M/PrimeRatio.pdf}
 %
 \Caption{ \label{fig:PrimeRatio}
 This figure succinctly summarizes all of the known theorems that are know about prime numbers, in one
-	simple graph, as a log-log plot of $|1-R_k|$.
+	simple graph, as a log-log plot of $|1-R_k|$.}
 Here $R_k$ is defined as
  $\pi_{k+1}/\pi_{k-1}>1 \underset{k\rightarrow \infty}{\rightarrow} 1$.
  %%% \purple $1\!-\!R_k = (\pi_{k-1}-{\pi_{k+1}})/{\pi_{k-1}}$ as $k \rightarrow \infty$. \black
@@ -1114,22 +1117,8 @@ In brief, since each prime is larger than it predecessor, $R_k>1 \rightarrow 1$,
 \red
 	How this shows up in the chart is interesting.
 \black
-%
-Note that since $R_k$ is a random variable, one must estimate both the mean and standard deviation, which is a decreasing function of $k$.
-However $|1-R| = |R-1|>1 \rightarrow 0$ as $k \rightarrow \infty$.
- %
-From the chart, the difference $|1\!-\!R_k|$ appears to be close to linear on a log-log scale (red dashed line)
-	\citep[p.~9, 5$^{th}$ Edition]{HardyWright38}.
-The function $1\!-\!R_k$ is characterized by the red dashed line, which is $\approx 2.0\!\times\! 10^{-4}$ for $k=1e4$.
-	{\brown
-	Note how the {\cyan cyan} line on the lower bound of the data, defines a straight line, with a linear slope
-	(on log-log coordinates), that is slightly steeper than the red-dashed median line.
-	For $k\leq30$, the points are labled with an {\black $\times$}.
-The upper bound is random.
-This well defined lower bound implies a structure in the lower bound of $R(k)$, which requires further study
-	{(\sc ./M/PrimeRatio.eps)}.
-	}
-	}
+%\newcommand{\LT}{\mbox{$\cal LT$}} \newcommand{\ILT}{\mbox{${\cal LT}^{-1}$}} %Laplace Transform
+
 \end{figure}
 
 
@@ -1209,6 +1198,8 @@ Note that the graph has a well defined lower bound, having a slope slightly stee
  }
 \EEx
 
+
+
 In modern western music the octave is further divided into 12 ratios called \emph{semitones}, equal to
 $\sqrt[12]{2}$. Twelve semitones is an octave.  In the end, it is a question of the density of primes
 on a log-log (i.e., ratio) scale.
@@ -1233,6 +1224,8 @@ calculation are shown in Fig.~\ref{fig:PrimeRatio}.
 For reference, when $k=10$, $\pi_{9}/\pi_{11} = 0.741935483870968$,
 thus $1-R(11)/R(9) = -0.347826086956522$.
 When $k=9580$, $1-R_k \approx 2.0043\!\times\! 10^{4}$.
+
+
 
 It is an important observation that the reciprocals of prime numbers are rational
  \Marginpar{Possible HW problem.}
@@ -1326,6 +1319,9 @@ of mathematical physics.  Hence mathematics plays a key role in physics, as does
  \index{Laplacian, scalar: $\Grad^2$} \index{Laplacian, vector $\VectorLaplacian$}
  \index{Maxwell's equations}
 
+
+
+
 \subsection {Other key mathematical theorems}
  %Table \ref{box:FundamentalThms} item 2 identifies several Other key concepts. %incrementally Remove table
 In addition to the widely recognized fundamental theorems,
@@ -1375,6 +1371,9 @@ This material can be best absorbed by treating it chronologically through histor
 can see how this body of knowledge came into existence, through the minds and hands of Galileo,
 Newton, Maxwell, and Einstein. Perhaps one day you too can stand on the shoulders of the giants who
 went before you.
+
+
+
 
 \section {Applications of prime numbers }\label{Lec 4}
 
@@ -1469,6 +1468,8 @@ Sieve of Eratosthenes for $N=50$.
 	}
 \end{figure}
 
+
+
 %\clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1506,15 +1507,7 @@ By definition,
 the multiples are products of the target prime ($2$ in our example) and every other integer ($n\ge 2$).
 In this way all the even numbers are removed in this first iteration.  The next remaining integer
 ($3$ in our example) is identified as the second prime $\pi_2$.  Then all the multiples of $\pi_2=3$
-   %(i.e., $\lfloor N/\pi_2\rfloor -1$)
-are removed.  The next remaining number is $\pi_3=5$, so all multiples of $\pi_3=5$ are removed
-(i.e., $\cancel{10}$, $\cancel{15}$, {$\cancel{25}$}, $\dots$).  This process is repeated until
-all the numbers of the list have been either canceled or identified as prime.
-
-As the word \emph{sieve} implies, this process takes a heavy toll on the integers, rapidly pruning
-the non-primes.  In four iterations of the sieve algorithm, all the primes less than $N=50$ are identified
-in red.  The final set of primes is displayed in step 4 of Fig.~\ref{fig:sieve}.
-
+   %(i.e., $\lfloor N/\pi_2\rfloor -1$)This figure su
 Once a prime greater than $N/2$ has been identified ($25$ in the example), the recursion stops, since
 twice that prime is greater than $N$, the maximum number under consideration.  Thus once $\sqrt{49}$
 has been reached, all the primes have been identified (this follows from the fact that the next prime
@@ -1651,10 +1644,12 @@ same, we are done; thus $3=\gcd(9,6)$.  We can verify this result by factoring [
 The value may also be numerically verified using the Matlab/Octave GCD command \texttt{gcd(6,9)}, which returns $3$.
 Thus the GCD reduces to the definition of long division.
 
+
+
 \begin{figure}[ht]
 %\begin{tcolorbox}
 \centering
-\resizebox{0.7\linewidth}{!} {\input{./Figs/EuclideanAlg} }
+\resizebox{0.7\linewidth}{!} {\input{./Figs/EuclideanAlg.pdf} }
   \Caption{ \label{fig:EuclideanAlg}
 The Euclidean algorithm recursively subtracts $n$ from $m$ until the remainder $m-kn$ is less than either
 $n$ or zero. Note that this recursion is the same as \texttt{mod(m,n)}. Thus the GCD recursively
